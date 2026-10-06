@@ -1,0 +1,1098 @@
+/* ==========================================
+   PARISA DES LYS — GLOBAL
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #F7F5F1;
+    color: #59483B;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* ==========================================
+   HEADER
+   ========================================== */
+
+.home-header {
+    padding: 32px 40px 34px;
+}
+
+.home-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    margin: 0 auto 30px;
+
+    gap: 22px;
+
+    text-decoration: none;
+}
+
+.home-brand .logo {
+    width: 82px;
+    height: 82px;
+
+    object-fit: contain;
+
+    margin: 0;
+}
+
+.brand-name {
+    color: #59483B;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    letter-spacing: 6px;
+    white-space: nowrap;
+}
+
+
+/* ==========================================
+   NAVIGATION
+   ========================================== */
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 48px;
+}
+
+.navigation a {
+    color: #59483B;
+    text-decoration: none;
+
+    font-size: 10px;
+    font-weight: 400;
+
+    letter-spacing: 2.4px;
+
+    transition: opacity 0.3s ease;
+}
+
+.navigation a:hover {
+    opacity: 0.55;
+}
+
+
+/* ==========================================
+   HOME GALLERY
+   ========================================== */
+
+.home-gallery {
+    width: min(1080px, calc(100% - 80px));
+
+    margin: 75px auto 0;
+}
+
+
+/* ==========================================
+   EACH ARTWORK
+   ========================================== */
+
+.home-piece {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.45fr)
+        minmax(250px, 0.65fr);
+
+    gap: 70px;
+
+    align-items: center;
+
+    margin-bottom: 125px;
+}
+
+
+/* Second artwork is mirrored */
+
+.home-piece-right {
+    grid-template-columns:
+        minmax(250px, 0.65fr)
+        minmax(0, 1.45fr);
+}
+
+
+/* ==========================================
+   ARTWORK IMAGES
+   ========================================== */
+
+.home-piece-image {
+    display: block;
+
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.home-piece-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+    object-position: center;
+
+    transition:
+        transform 0.7s ease,
+        opacity 0.4s ease;
+}
+
+.home-piece-image:hover img {
+    transform: scale(1.008);
+    opacity: 0.97;
+}
+
+
+/* ==========================================
+   ARTWORK INFORMATION
+   ========================================== */
+
+.home-piece-info {
+    width: 100%;
+}
+
+.home-eyebrow {
+    margin: 0 0 16px;
+
+    color: #9A8069;
+
+    font-size: 9px;
+    font-weight: 400;
+
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+.home-piece-info h1,
+.home-piece-info h2 {
+    margin: 0 0 15px;
+
+    color: #59483B;
+
+    font-size: 27px;
+    font-weight: 400;
+
+    line-height: 1.35;
+    letter-spacing: 1px;
+
+}
+
+/* Bismillah title */
+
+.home-piece-right .home-piece-info h2 {
+
+    font-size: 22px;
+
+    white-space: nowrap;
+}
+  
+.artwork-arabic {
+    margin: 2px 0 18px;
+
+    color: #6A5543;
+
+    font-size: 19px;
+    font-weight: 400;
+
+    line-height: 1.8;
+
+    direction: rtl;
+    text-align: left;
+}
+
+.home-piece-year {
+    margin: 0 0 30px;
+
+    color: #9A8A7B;
+
+    font-size: 10px;
+
+    letter-spacing: 2.5px;
+}
+
+
+/* ==========================================
+   VIEW ARTWORK LINK
+   ========================================== */
+
+.home-text-link {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 25px;
+
+    color: #806A57;
+    text-decoration: none;
+
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+
+    padding-bottom: 6px;
+}
+
+.home-text-link span {
+    font-size: 18px;
+
+    transition: transform 0.3s ease;
+}
+
+.home-text-link:hover span {
+    transform: translateX(5px);
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+.site-footer {
+    margin-top: 20px;
+
+    padding: 65px 30px 45px;
+
+    border-top: 1px solid rgba(89, 72, 59, 0.15);
+
+    text-align: center;
+}
+
+.footer-brand {
+    margin-bottom: 32px;
+
+    color: #59483B;
+
+    font-size: 12px;
+
+    letter-spacing: 5px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 38px;
+
+    margin-bottom: 42px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 9px;
+
+    color: #806A57;
+    text-decoration: none;
+
+    font-size: 10px;
+
+    letter-spacing: 1.3px;
+
+    transition: opacity 0.3s ease;
+}
+
+.social-link:hover {
+    opacity: 0.55;
+}
+
+.social-link svg {
+    width: 17px;
+    height: 17px;
+
+    fill: none;
+    stroke: currentColor;
+
+    stroke-width: 1.3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.footer-copyright {
+    margin: 0;
+
+    color: #A29283;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+}
+
+
+/* ==========================================
+   ARTWORKS OVERVIEW PAGE
+   ========================================== */
+
+.artworks-page {
+    width: min(1100px, calc(100% - 80px));
+
+    margin: 75px auto 120px;
+}
+
+.artworks-heading {
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.artworks-heading h1 {
+    margin: 0;
+
+    color: #59483B;
+
+    font-size: 21px;
+    font-weight: 400;
+
+    letter-spacing: 5px;
+}
+
+.artworks-heading p {
+    margin: 12px 0 0;
+
+    color: #9A8A7B;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+}
+
+.artworks-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 50px;
+}
+
+.artwork-card {
+    margin: 0;
+}
+
+.artwork-card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.artwork-card img {
+    width: 100%;
+    height: 430px;
+
+    object-fit: cover;
+}
+
+.artwork-info {
+    padding-top: 18px;
+
+    text-align: center;
+}
+
+.artwork-info h2 {
+    margin: 0;
+
+    color: #59483B;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    letter-spacing: 1.5px;
+}
+
+.artwork-info p {
+    margin: 7px 0 0;
+
+    color: #9A8A7B;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+
+/* ==========================================
+   ARTWORK DETAIL PAGE
+   ========================================== */
+
+.artwork-detail-page {
+    width: min(1100px, calc(100% - 80px));
+
+    margin: 60px auto 100px;
+}
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 30px;
+
+    color: #806A57;
+    text-decoration: none;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+}
+
+.artwork-main-image {
+    display: block;
+
+    width: 100%;
+    max-width: 1000px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+.artwork-description {
+    margin-top: 28px;
+
+    text-align: center;
+}
+
+.artwork-description h1 {
+    margin: 0 0 10px;
+
+    color: #59483B;
+
+    font-size: 24px;
+    font-weight: 400;
+
+    letter-spacing: 1.5px;
+}
+
+.artwork-year {
+    margin: 0;
+
+    color: #9A8A7B;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+
+/* ==========================================
+   ARTWORK DETAIL GALLERY
+   ========================================== */
+
+.artwork-slider {
+    display: flex;
+
+    width: 100%;
+    margin-top: 55px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    gap: 20px;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+
+    cursor: grab;
+
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+}
+
+.artwork-slider::-webkit-scrollbar {
+    display: none;
+
+}
+
+.artwork-slide {
+    flex: 0 0 100%;
+
+    height: min(68vh, 680px);
+
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
+}
+
+.artwork-slide img {
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    user-select: none;
+    -webkit-user-drag: none;
+
+}
+
+.artwork-slider.is-dragging {
+    cursor: grabbing;
+    scroll-snap-type: none;
+
+}
+
+.slider-hint {
+  margin: 22px 0 0;
+
+    text-align: center;
+
+    color: #9A8069;
+
+    font-size: 8px;
+    letter-spacing: 2.5px;
+}
+
+
+/* ==========================================
+   THE ARTIST
+   ========================================== */
+
+.artist-page {
+    width: min(900px, calc(100% - 80px));
+    margin: 65px auto 110px;
+}
+
+.artist-intro {
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.artist-intro h1 {
+    margin: 0;
+    color: #59483B;
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+}
+
+.artist-name {
+    margin: 12px 0 0;
+    color: #9A8069;
+    font-size: 9px;
+    letter-spacing: 3.5px;
+}
+
+.artist-line {
+    width: 45px;
+    height: 1px;
+    margin: 32px auto 36px;
+    background: rgba(89, 72, 59, 0.3);
+}
+
+
+/* BIOGRAPHY */
+
+.artist-biography {
+    color: #6F5B4A;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.9;
+    text-align: left;
+}
+
+.artist-biography p {
+    margin: 0 0 19px;
+}
+
+.artist-opening {
+    color: #59483B;
+    font-size: 21px;
+    line-height: 1.55;
+    letter-spacing: 0.3px;
+}
+
+.artist-biography em {
+    color: #59483B;
+    font-style: italic;
+}
+
+.artist-statement {
+    margin-top: 30px !important;
+    color: #59483B;
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.artist-welcome {
+    margin-top: 28px !important;
+    margin-bottom: 10px !important;
+    color: #6F5B4A;
+}
+
+.artist-signature {
+    margin-top: 0 !important;
+    color: #9A8069;
+    font-style: italic;
+    font-size: 14px;
+}
+
+
+/* ARTIST DETAILS */
+
+.artist-details {
+    display: grid;
+    grid-template-columns: 1.5fr 0.7fr;
+    gap: 80px;
+    max-width: 670px;
+    margin: 55px auto 0;
+    padding-top: 35px;
+    border-top: 1px solid rgba(89, 72, 59, 0.15);
+}
+
+.artist-detail {
+    color: #6F5B4A;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.artist-detail-heading {
+    margin: 0 0 22px;
+    color: #9A8069;
+    font-size: 8px;
+    letter-spacing: 3px;
+}
+
+.artist-detail p {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.artist-detail span {
+    color: #A29283;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+/* ==========================================
+   PRICES
+   ========================================== */
+
+.prices-page {
+    width: min(900px, calc(100% - 80px));
+    margin: 45px auto 90px;
+}
+
+
+/* HEADING */
+
+.prices-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.prices-heading h1 {
+    margin: 0;
+    color: #59483B;
+    font-size: 39px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.prices-intro {
+    margin: 20px 0 0;
+    color: #806A57;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* PRICE LIST */
+
+.price-list {
+    border-top: 1px solid rgba(89, 72, 59, 0.18);
+}
+
+.price-list-item {
+    display: grid;
+    grid-template-columns: 45px 1fr 180px;
+    gap: 30px;
+    align-items: start;
+
+    padding: 30px 0;
+
+    border-bottom: 1px solid rgba(89, 72, 59, 0.18);
+}
+
+.price-number {
+    color: #A29283;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.price-work h2 {
+    margin: 0 0 15px;
+
+    color: #59483B;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.price-work > p {
+    margin: 0;
+
+    color: #806A57;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.price-work .price-arabic {
+    margin: 0 0 13px;
+
+    color: #6A5543;
+    font-size: 17px;
+    text-align: left;
+}
+
+.price-work .price-request {
+    margin-top: 20px;
+
+    color: #9A8069;
+    font-size: 12px;
+}
+
+.price-value {
+    text-align: right;
+}
+
+.price-status {
+    margin: 0 0 15px;
+
+    color: #9A8069;
+    font-size: 8px;
+    line-height: 1.5;
+    letter-spacing: 2.2px;
+}
+
+.price-amount {
+    margin: 0;
+
+    color: #59483B;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+/* ==========================================
+   CONTACT
+   ========================================== */
+
+.contact-page {
+    width: min(700px, calc(100% - 80px));
+    margin: 45px auto 90px;
+}
+
+
+/* INTRO */
+
+.contact-intro {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.contact-intro h1 {
+    margin: 0;
+    color: #59483B;
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 4px;
+}
+
+.contact-opening {
+    margin: 22px 0 12px;
+    color: #59483B;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.contact-text {
+    max-width: 520px;
+    margin: 0 auto;
+    color: #806A57;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* CONTACT DETAILS */
+
+.contact-links {
+    border-top: 1px solid rgba(89, 72, 59, 0.18);
+}
+
+.contact-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(89, 72, 59, 0.18);
+}
+
+.contact-label {
+    margin: 0;
+    color: #9A8069;
+    font-size: 8px;
+    letter-spacing: 3px;
+}
+
+.contact-item a {
+    color: #59483B;
+    text-decoration: none;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+}
+
+.contact-item a:hover {
+    opacity: 0.55;
+}
+
+
+/* LOCATION */
+
+.contact-location {
+    margin: 30px 0 0;
+    text-align: center;
+    color: #A29283;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 800px) {
+
+    .home-gallery {
+        width: min(760px, calc(100% - 50px));
+    }
+
+    .home-piece,
+    .home-piece-right {
+        grid-template-columns:
+            minmax(0, 1.25fr)
+            minmax(210px, 0.75fr);
+
+        gap: 45px;
+    }
+
+    .home-piece-image img {
+        width: 100%;
+        height: auto;
+
+        object-fit: contain;
+    }
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 700px) {
+
+    /* HEADER */
+
+    .home-header {
+        padding: 24px 18px 25px;
+    }
+
+    .home-brand {
+        gap: 13px;
+
+        margin-bottom: 25px;
+    }
+
+    .home-brand .logo {
+        width: 58px;
+        height: 58px;
+    }
+
+    .brand-name {
+        font-size: 14px;
+
+        letter-spacing: 3px;
+    }
+
+
+    /* NAVIGATION */
+
+    .navigation {
+        gap: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    .navigation a {
+        font-size: 8px;
+
+        letter-spacing: 1.4px;
+    }
+
+
+    /* HOME */
+
+    .home-gallery {
+        width: calc(100% - 36px);
+
+        margin-top: 45px;
+    }
+
+    .home-piece,
+    .home-piece-right {
+        display: flex;
+        flex-direction: column;
+
+        gap: 24px;
+
+        margin-bottom: 80px;
+    }
+
+
+    /* IMAGE FIRST ON MOBILE */
+
+    .home-piece-left .home-piece-image,
+    .home-piece-right .home-piece-image {
+        order: 1;
+    }
+
+    .home-piece-left .home-piece-info,
+    .home-piece-right .home-piece-info {
+        order: 2;
+    }
+
+    .home-piece-image {
+        width: 100%;
+    }
+
+    .home-piece-image img {
+        width: 100%;
+        height: auto;
+
+        object-fit: contain;
+        object-position: center;
+    }
+
+
+    /* ARTWORK TEXT */
+
+    .home-piece-info {
+        width: 100%;
+    }
+
+    .home-piece-info h1,
+    .home-piece-info h2 {
+        font-size: 22px;
+    }
+
+    .artwork-arabic {
+        font-size: 18px;
+    }
+
+
+    /* FOOTER */
+
+    .site-footer {
+        padding: 50px 20px 35px;
+    }
+
+    .footer-socials {
+        flex-direction: column;
+
+        gap: 17px;
+    }
+
+
+    /* ARTWORKS OVERVIEW */
+
+    .artworks-page {
+        width: calc(100% - 36px);
+
+        margin-top: 50px;
+    }
+
+    .artworks-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+    .artwork-card img {
+        height: auto;
+    }
+
+
+    /* DETAIL PAGE */
+
+    .artwork-detail-page {
+        width: calc(100% - 36px);
+
+        margin-top: 45px;
+    }
+
+    .artwork-gallery {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+
+        margin-top: 55px;
+    }
+}
+
+    .contact-page {
+        width: calc(100% - 36px);
+        margin-top: 45px;
+    }
+
+    .contact-intro {
+        margin-bottom: 40px;
+    }
+
+    .contact-intro h1 {
+        font-size: 30px;
+    }
+
+    .contact-item {
+        grid-template-columns: 1fr;
+        gap: 9px;
+        padding: 20px 0;
+    }
+
+    .contact-item a {
+        font-size: 13px;
+    }
