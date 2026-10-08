@@ -962,62 +962,50 @@ img {
     /* HEADER */
 
     .home-header {
-        padding: 24px 18px 25px;
+        padding: 20px 16px 20px;
     }
 
     .home-brand {
-        gap: 13px;
-
-        margin-bottom: 25px;
+        gap: 10px;
+        margin-bottom: 20px;
     }
 
     .home-brand .logo {
-        width: 58px;
-        height: 58px;
+        width: 48px;
+        height: 48px;
     }
 
     .brand-name {
-        font-size: 14px;
-
-        letter-spacing: 3px;
+        font-size: 12px;
+        letter-spacing: 2.5px;
     }
-
 
     /* NAVIGATION */
 
     .navigation {
-        gap: 15px;
-
+        gap: 14px;
         flex-wrap: wrap;
     }
 
     .navigation a {
         font-size: 8px;
-
-        letter-spacing: 1.4px;
+        letter-spacing: 1px;
     }
-
 
     /* HOME */
 
     .home-gallery {
         width: calc(100% - 36px);
-
-        margin-top: 45px;
+        margin-top: 28px;
     }
 
     .home-piece,
     .home-piece-right {
         display: flex;
         flex-direction: column;
-
-        gap: 24px;
-
-        margin-bottom: 80px;
+        gap: 16px;
+        margin-bottom: 45px;
     }
-
-
-    /* IMAGE FIRST ON MOBILE */
 
     .home-piece-left .home-piece-image,
     .home-piece-right .home-piece-image {
@@ -1031,67 +1019,117 @@ img {
 
     .home-piece-image {
         width: 100%;
+        height: auto;
+        max-height: 420px;
     }
 
     .home-piece-image img {
         width: 100%;
         height: auto;
-
+        max-height: 420px;
         object-fit: contain;
         object-position: center;
     }
-
-
-    /* ARTWORK TEXT */
 
     .home-piece-info {
         width: 100%;
     }
 
     .home-piece-info h1,
-    .home-piece-info h2 {
-        font-size: 22px;
+    .home-piece-info h2,
+    .home-piece-right .home-piece-info h2 {
+        font-size: 18px;
+        line-height: 1.4;
+        white-space: normal;
+    }
+
+    .home-eyebrow {
+        font-size: 8px;
+        margin-bottom: 10px;
     }
 
     .artwork-arabic {
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 1.6;
     }
 
+    .home-piece-year {
+        margin-bottom: 18px;
+    }
 
     /* FOOTER */
 
     .site-footer {
-        padding: 50px 20px 35px;
+        padding: 30px 18px 25px;
+    }
+
+    .footer-brand {
+        margin-bottom: 18px;
+        font-size: 10px;
     }
 
     .footer-socials {
-        flex-direction: column;
-
-        gap: 17px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 20px;
     }
 
+    .social-link {
+        font-size: 9px;
+    }
 
     /* ARTWORKS OVERVIEW */
 
     .artworks-page {
         width: calc(100% - 36px);
+        margin: 30px auto 55px;
+    }
 
-        margin-top: 50px;
+    .artworks-heading {
+        margin-bottom: 30px;
+    }
+
+    .artworks-heading h1 {
+        font-size: 20px;
+        letter-spacing: 3px;
     }
 
     .artworks-grid {
         grid-template-columns: 1fr;
-
-        gap: 55px;
+        gap: 35px;
     }
 
     .artwork-card img {
         height: auto;
     }
 
+    .artwork-info {
+        padding-top: 12px;
+    }
 
+    .artwork-info h2 {
+        font-size: 14px;
+    }
 
-    /* DETAIL PAGE */
+    /* ARTWORK DETAIL */
+
+    .artwork-detail-page {
+        width: calc(100% - 36px);
+        margin: 25px auto 50px;
+    }
+
+    .back-link {
+        margin-bottom: 15px;
+    }
+
+    .artwork-slider {
+        margin-top: 25px;
+    }
+
+    .artwork-slide {
+        height: min(55vh, 480px);
+    }
 
     .slider-arrow {
         width: 24px;
@@ -1106,4 +1144,183 @@ img {
     .slider-arrow-next {
         right: -12px;
     }
+
+    .slider-hint {
+        margin-top: 12px;
     }
+
+    .artwork-description {
+        margin-top: 20px;
+    }
+
+    .artwork-description h1 {
+        font-size: 18px;
+    }
+
+    /* THE ARTIST */
+
+    .artist-page {
+        width: calc(100% - 40px);
+        margin: 30px auto 55px;
+    }
+
+    .artist-intro {
+        max-width: 100%;
+    }
+
+    .artist-line {
+        margin: 18px auto 22px;
+    }
+
+    .artist-biography {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .artist-biography p {
+        margin-bottom: 13px;
+    }
+
+    .artist-opening {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .artist-statement {
+        margin-top: 18px !important;
+        font-size: 16px;
+    }
+
+    .artist-signature {
+        margin-top: 10px !important;
+        font-size: 12px;
+    }
+
+    .artist-details {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 30px;
+        padding-top: 25px;
+    }
+
+    .artist-detail {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .artist-detail-heading {
+        margin-bottom: 12px;
+    }
+
+    .artist-detail p {
+        margin-bottom: 15px;
+    }
+
+    /* PRICES */
+
+    .prices-page {
+        width: calc(100% - 40px);
+        margin: 30px auto 55px;
+    }
+
+    .prices-heading {
+        margin-bottom: 25px;
+    }
+
+    .prices-heading h1 {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .prices-intro {
+        margin-top: 12px;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .price-list-item {
+        grid-template-columns: 25px minmax(0, 1fr);
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    .price-work h2 {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .price-work > p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .price-work .price-arabic {
+        font-size: 15px;
+    }
+
+    .price-work .price-request {
+        margin-top: 12px;
+        font-size: 11px;
+    }
+
+    .price-value {
+        grid-column: 2;
+        text-align: left;
+    }
+
+    .price-status {
+        margin-bottom: 7px;
+    }
+
+    .price-amount {
+        font-size: 16px;
+    }
+
+    /* CONTACT */
+
+    .contact-page {
+        width: calc(100% - 40px);
+        margin: 30px auto 55px;
+    }
+
+    .contact-intro {
+        margin-bottom: 30px;
+    }
+
+    .contact-intro h1 {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .contact-opening {
+        margin: 15px 0 10px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .contact-text {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .contact-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 16px 0;
+    }
+
+    .contact-label {
+        font-size: 8px;
+    }
+
+    .contact-item a {
+        font-size: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-location {
+        margin-top: 20px;
+        font-size: 8px;
+    }
+
+}
