@@ -40,6 +40,47 @@ if (slider) {
         return closestIndex;
     }
 
+    function positionArrows() {
+        const currentSlide = slides[getCurrentIndex()];
+        const image = currentSlide?.querySelector("img");
+
+        if (!image || !previousButton || !nextButton) return;
+
+        const container = slider.parentElement;
+        const containerRect = container.getBoundingClientRect();
+        const imageRect = image.getBoundingClientRect();
+
+        const imageLeft = imageRect.left - containerRect.left;
+        const imageRight = imageRect.right - containerRect.left;
+
+        const imageCenterY =
+            imageRect.top - containerRect.top +
+            imageRect.height / 2;
+
+        const gap = window.innerWidth <= 700 ? 5 : 12;
+
+        const previousWidth = previousButton.offsetWidth;
+        const nextWidth = nextButton.offsetWidth;
+
+        const previousLeft = Math.max(
+            0,
+            imageLeft - previousWidth - gap
+        );
+
+        const nextLeft = Math.min(
+            containerRect.width - nextWidth,
+            imageRight + gap
+        );
+
+        previousButton.style.left = `${previousLeft}px`;
+        nextButton.style.left = `${nextLeft}px`;
+
+        nextButton.style.right = "auto";
+
+        previousButton.style.top = `${imageCenterY}px`;
+        nextButton.style.top = `${imageCenterY}px`;
+    }
+
     function updateArrows() {
         const currentIndex = getCurrentIndex();
 
@@ -51,6 +92,8 @@ if (slider) {
             nextButton.disabled =
                 currentIndex === slides.length - 1;
         }
+
+        positionArrows();
     }
 
     function goToSlide(index) {
@@ -113,7 +156,13 @@ if (slider) {
         image.addEventListener("dragstart", (event) => {
             event.preventDefault();
         });
+
+        if (!image.complete) {
+            image.addEventListener("load", positionArrows);
+        }
     });
+
+    window.addEventListener("resize", positionArrows);
 
     updateArrows();
 }
