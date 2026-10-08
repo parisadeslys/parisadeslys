@@ -162,7 +162,15 @@ if (slider) {
         }
     });
 
-    window.addEventListener("resize", positionArrows);
+       window.addEventListener("resize", updateArrows);
+
+    // Position arrows after the page and images have loaded
+    window.addEventListener("load", updateArrows);
+
+    // Recalculate when the current image finishes loading
+    slider.querySelectorAll("img").forEach((image) => {
+        image.addEventListener("load", updateArrows);
+    });
 
     updateArrows();
 }
