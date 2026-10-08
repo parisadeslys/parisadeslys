@@ -26,12 +26,14 @@
         </span>
     </a>
 
+  
     <nav class="navigation">
         <a href="artworks.html">ARTWORKS</a>
-        <a href="#">THE ARTIST</a>
-        <a href="#">PRICES</a>
-        <a href="#">CONTACT</a>
+        <a href="artist.html">THE ARTIST</a>
+        <a href="prices.html">PRICES</a>
+        <a href="contact.html">CONTACT</a>
     </nav>
+
 
 </header>
 
@@ -60,7 +62,19 @@
     </section>
 
 
-    <section class="artwork-slider">
+    
+    <div class="artwork-slider-container">
+
+        <button
+            class="slider-arrow slider-arrow-prev"
+            type="button"
+            aria-label="Previous artwork image"
+        >
+            &#10094;
+        </button>
+
+        <section class="artwork-slider">
+
 
         <figure class="artwork-slide">
             <img
@@ -134,10 +148,21 @@
             >
         </figure>
 
+    <
     </section>
 
+    <button
+        class="slider-arrow slider-arrow-next"
+        type="button"
+        aria-label="Next artwork image"
+    >
+        &#10095;
+    </button>
 
-    <p class="slider-hint">
+</div>
+
+<p class="slider-hint">
+
         DRAG / SWIPE TO EXPLORE
     </p>
 
