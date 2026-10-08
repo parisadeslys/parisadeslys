@@ -348,7 +348,7 @@ img {
 .artworks-page {
     width: min(1100px, calc(100% - 80px));
 
-    margin: 75px auto 120px;
+    margin: 65px auto 120px;
 }
 
 .artworks-heading {
@@ -623,6 +623,15 @@ img {
     text-align: center;
 }
 
+.artist-intro > .home-eyebrow {
+    margin: 0;
+    color: #59483B;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    line-height: 1.3;
+}
+
 .artist-intro h1 {
     margin: 0;
     color: #59483B;
@@ -639,10 +648,11 @@ img {
     letter-spacing: 3.5px;
 }
 
+
 .artist-line {
-    width: 45px;
+    width: 200px;
     height: 1px;
-    margin: 32px auto 36px;
+    margin: 24px auto 32px;
     background: rgba(89, 72, 59, 0.3);
 }
 
@@ -736,7 +746,7 @@ img {
 
 .prices-page {
     width: min(900px, calc(100% - 80px));
-    margin: 45px auto 90px;
+    margin: 65px auto 90px;
 }
 
 
@@ -744,19 +754,19 @@ img {
 
 .prices-heading {
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
 .prices-heading h1 {
     margin: 0;
     color: #59483B;
-    font-size: 39px;
+    font-size: 21px;
     font-weight: 400;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
 }
 
 .prices-intro {
-    margin: 20px 0 0;
+    margin: 0;
     color: #806A57;
     font-size: 14px;
     line-height: 1.8;
@@ -845,7 +855,7 @@ img {
 
 .contact-page {
     width: min(700px, calc(100% - 80px));
-    margin: 45px auto 90px;
+    margin: 65px auto 90px;
 }
 
 
@@ -853,23 +863,24 @@ img {
 
 .contact-intro {
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
 }
 
 .contact-intro h1 {
     margin: 0;
     color: #59483B;
-    font-size: 39px;
+    font-size: 21px;
     font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: 4px;
+    line-height: 1.3;
+    letter-spacing: 5px;
 }
 
+
 .contact-opening {
-    margin: 22px 0 12px;
+    margin: 0;
     color: #59483B;
-    font-size: 18px;
-    line-height: 1.7;
+    font-size: 14px;
+    line-height: 1.8;
 }
 
 .contact-text {
@@ -1159,6 +1170,11 @@ img {
 
     /* THE ARTIST */
 
+    .artist-intro > .home-eyebrow {
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
     .artist-page {
         width: calc(100% - 40px);
         margin: 30px auto 55px;
@@ -1323,157 +1339,4 @@ img {
         font-size: 8px;
     }
 
-}
-
-
-
-/* =========================================
-   PORTFOLIO HOMEPAGE
-   ========================================= */
-
-.portfolio-home {
-    width: min(1100px, calc(100% - 80px));
-    margin: 48px auto 80px;
-}
-
-.portfolio-heading {
-    text-align: center;
-    margin-bottom: 36px;
-}
-
-.portfolio-heading h1 {
-    font-family: Georgia, serif;
-    font-size: 23px;
-    font-weight: normal;
-    letter-spacing: 0.12em;
-    color: #59483B;
-    margin: 0 0 12px;
-}
-
-.portfolio-heading p {
-    font-size: 10px;
-    letter-spacing: 0.14em;
-    color: #9A8069;
-    margin: 0;
-}
-
-.portfolio-gallery {
-    display: flex;
-    gap: 30px;
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-}
-
-.portfolio-gallery::-webkit-scrollbar {
-    display: none;
-}
-
-.portfolio-item {
-    flex: 0 0 calc((100% - 30px) / 2);
-    min-width: 0;
-    scroll-snap-align: start;
-}
-
-.portfolio-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 340px;
-    text-decoration: none;
-}
-
-.portfolio-image img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.portfolio-info {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.portfolio-info h2 {
-    font-family: Georgia, serif;
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 1.5;
-    color: #59483B;
-    margin: 0 0 5px;
-}
-
-.portfolio-info p {
-    font-size: 11px;
-    color: #9A8069;
-    margin: 0;
-}
-
-.portfolio-swipe-hint {
-    display: none;
-}
-
-
-/* MOBILE */
-
-@media (max-width: 700px) {
-
-    .portfolio-home {
-        width: 100%;
-        margin: 25px auto 45px;
-    }
-
-    .portfolio-heading {
-        margin-bottom: 22px;
-    }
-
-    .portfolio-heading h1 {
-        font-size: 18px;
-        margin-bottom: 8px;
-    }
-
-    .portfolio-heading p {
-        font-size: 9px;
-    }
-
-    .portfolio-gallery {
-        gap: 12px;
-        padding: 0 18px 5px;
-        scroll-padding-left: 18px;
-    }
-
-    .portfolio-item {
-        flex: 0 0 76%;
-    }
-
-    .portfolio-image {
-        height: 255px;
-    }
-
-    .portfolio-info {
-        margin-top: 10px;
-    }
-
-    .portfolio-info h2 {
-        font-size: 13px;
-        line-height: 1.4;
-    }
-
-    .portfolio-info p {
-        font-size: 10px;
-    }
-
-    .portfolio-swipe-hint {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-        margin: 20px 0 0;
-        font-size: 9px;
-        letter-spacing: 0.12em;
-        color: #9A8069;
-    }
 }
